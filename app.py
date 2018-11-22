@@ -3,8 +3,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World test!'
+	return render_template('heroku.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
+
 
